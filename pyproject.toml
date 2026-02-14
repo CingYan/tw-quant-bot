@@ -1,0 +1,66 @@
+[project]
+name = "tw-quant-bot"
+version = "0.2.0"
+description = "台股量化交易回測與監控系統"
+readme = "README.md"
+requires-python = ">=3.13"
+license = {text = "MIT"}
+authors = [
+    {name = "Eagle + 羽燕鋒 JLS 2.0"},
+]
+keywords = ["trading", "backtesting", "taiwan-stock", "quantitative"]
+
+# 核心依賴（階段二以後需要）
+dependencies = [
+    # 資料處理
+    "pandas>=2.2.0",
+    "numpy>=1.26.0",
+    
+    # 資料源
+    "yfinance>=0.2.40",
+    
+    # 技術分析
+    "TA-Lib>=0.4.28",
+    
+    # 回測（可選）
+    "backtrader>=1.9.78",
+    
+    # 機器學習（階段三）
+    "scikit-learn>=1.4.0",
+    
+    # 監控（階段四）
+    "python-telegram-bot>=20.0",
+    "flask>=3.0.0",
+    "schedule>=1.2.0",
+    
+    # 視覺化
+    "matplotlib>=3.8.0",
+    "plotly>=5.18.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/data", "src/backtest", "src/ml", "src/monitor"]
+
+# 開發依賴組（uv 新格式）
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-cov>=4.1.0",
+    "black>=24.0.0",
+    "ruff>=0.1.0",
+]
+
+[tool.black]
+line-length = 100
+target-version = ['py313']
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+
+[project.scripts]
+tw-quant = "main:main"

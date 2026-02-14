@@ -1,0 +1,35 @@
+{
+  "initial_capital": 1000000,
+  "cash": 995345.7398861884,
+  "positions": {},
+  "trade_history": [
+    {
+      "timestamp": "2026-02-05T14:05:44.689815",
+      "action": "buy",
+      "symbol": "2409.TW",
+      "price": 15.600000381469727,
+      "shares": 51000,
+      "cost": 795600.019454956,
+      "commission": 1133.7300277233123,
+      "total_cost": 796733.7494826794,
+      "remaining_cash": 203266.2505173206
+    },
+    {
+      "timestamp": "2026-02-05T14:05:44.957091",
+      "action": "sell",
+      "symbol": "2409.TW",
+      "price": 15.600000381469727,
+      "shares": 51000,
+      "revenue": 795600.019454956,
+      "commission": 1133.7300277233123,
+      "tax": 2386.800058364868,
+      "net_revenue": 792079.4893688678,
+      "remaining_cash": 995345.7398861884,
+      "avg_cost": 15.600000381469727,
+      "profit": 0.0,
+      "profit_pct": 0.0
+    }
+  ],
+  "equity_curve": [],
+  "last_updated": "2026-02-05T14:05:44.957104"
+}

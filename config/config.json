@@ -1,0 +1,43 @@
+{
+  "data": {
+    "source": "yfinance",
+    "symbols": [
+      "2330.TW",
+      "2317.TW",
+      "2454.TW",
+      "2412.TW",
+      "1301.TW"
+    ],
+    "cache_dir": "data/raw",
+    "processed_dir": "data/processed",
+    "update_interval": 3600
+  },
+  "backtest": {
+    "initial_cash": 1000000,
+    "commission": 0.001425,
+    "slippage": 0.001,
+    "position_sizing": "equal_weight",
+    "max_positions": 5
+  },
+  "ml": {
+    "model_dir": "models",
+    "features": [
+      "rsi",
+      "macd",
+      "volume_ratio",
+      "price_momentum"
+    ],
+    "target": "next_day_return",
+    "train_test_split": 0.8
+  },
+  "monitor": {
+    "telegram_token": "YOUR_BOT_TOKEN",
+    "telegram_chat_id": "-1001068509881",
+    "alert_threshold": 0.05,
+    "report_time": "09:00"
+  },
+  "db": {
+    "path": "data/tw_quant.db",
+    "timeout": 30
+  }
+}

@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+data/raw/*.csv
+data/processed/*.json
+logs/*.log
+*.db
+*.db-journal
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# UV
+.python-version
