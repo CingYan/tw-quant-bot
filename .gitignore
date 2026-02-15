@@ -1,0 +1,27 @@
+# Credentials - NEVER commit these
+credentials/
+credentials.json
+*.credential*
+*token*.json
+*.env
+.env*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
