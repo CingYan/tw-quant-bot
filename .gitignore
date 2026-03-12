@@ -40,3 +40,20 @@ htmlcov/
 
 # UV
 .python-version
+
+# Credentials
+credentials/*.json
+!credentials/*.example.json
+
+# Logs
+*.log
+logs/
+
+# Data
+data/
+
+# Cache
+__pycache__/
+*.pyc
+.venv/
+venv/
