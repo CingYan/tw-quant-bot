@@ -26,7 +26,7 @@ v2 重點修正（來自 trading-lessons.md）：
 ⚠️ 模擬交易專用 — simulation=True，禁止真實下單
 """
 
-__version__ = "3.0.0"
+__version__ = "2.0.1"
 
 import sys
 import os
@@ -780,7 +780,7 @@ class TWDaytradeBot:
         """Inner trading loop. Returns when market closes."""
         _ensure_deps()
         logger.info("=" * 60)
-        logger.info(f"TW Bot v3.0 啟動 — {_today_str()}")
+        logger.info(f"TW Bot v{__version__} 啟動 — {_today_str()}")
         logger.info("=" * 60)
 
         screened = self.run_screener()

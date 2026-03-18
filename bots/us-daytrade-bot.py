@@ -26,7 +26,7 @@ v2 重點修正（來自 trading-lessons.md）：
 ⚠️ 僅使用 Paper Trading endpoint，禁止真實下單
 """
 
-__version__ = "2.1.0"
+__version__ = "2.0.1"
 
 import sys
 import os
@@ -805,7 +805,7 @@ class USDaytradeBot:
         _ensure_deps()
         et = _et_now()
         logger.info("=" * 60)
-        logger.info(f"US Bot v2.0 啟動 — {_today_str()} ({et.strftime('%H:%M ET')})")
+        logger.info(f"US Bot v{__version__} 啟動 — {_today_str()} ({et.strftime('%H:%M ET')})")
         logger.info(f"監控標的: {WATCHLIST}")
         logger.info("=" * 60)
 
