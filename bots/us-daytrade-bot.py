@@ -11,7 +11,7 @@
 # ///
 # -*- coding: utf-8 -*-
 """
-美股當沖模擬交易 Bot v2.0 — Alpaca Paper Trading + SMC + VWAP
+美股當沖模擬交易 Bot — Alpaca Paper Trading + SMC + VWAP
 
 v2 重點修正（來自 trading-lessons.md）：
   - 多時框衝突 → HARD REJECT（非扣分）

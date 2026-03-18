@@ -12,7 +12,7 @@
 # ///
 # -*- coding: utf-8 -*-
 """
-台股當沖模擬交易 Bot v2.0 — Shioaji + SMC + VWAP
+台股當沖模擬交易 Bot — Shioaji + SMC + VWAP
 
 v2 重點修正（來自 trading-lessons.md）：
   - 多時框衝突 → HARD REJECT（非扣分）
