@@ -26,7 +26,7 @@ v2 重點修正（來自 trading-lessons.md）：
 ⚠️ 僅使用 Paper Trading endpoint，禁止真實下單
 """
 
-__version__ = "2.0.0"
+__version__ = "2.1.0"
 
 import sys
 import os
